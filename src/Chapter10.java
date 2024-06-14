@@ -13,11 +13,11 @@ public class Chapter10 {
 		list.add(new Task(LocalDate.of(2021, 8, 10), "散髪に行く", false));
 		list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く", false));
 		List<Task>a=list.stream()
-				.filter(t->!t.isDone())
-				.sorted()
-				.collect(Collectors.toList());
-				System.out.println("未完了のタスクの個数は" + a.size());
-				System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
-				a.forEach(System.out::println);
+			.filter(t->!t.isDone())
+			.sorted()
+			.collect(Collectors.toList());
+		System.out.println("未完了のタスクの個数は" + a.size());
+		System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
+		a.forEach(System.out::println);
 	}
 }
