@@ -17,15 +17,7 @@ public class Chapter10 {
 				.sorted()
 				.collect(Collectors.toList());
 				System.out.println("未完了のタスクの個数は" + a.size());
-				System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】"
-						+ "");
+				System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
 				a.forEach(System.out::println);
-			
-
-	    }
-	
-		
 	}
-	
-
-
+}
